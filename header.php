@@ -6,6 +6,12 @@
 ob_start();
 session_start();
 include("admin/inc/config.php");
+
+// PHP  DEFINIFTIONS FILE  FROM  THE   ADMIN PANEL
+include("admin/inc/definitions.php");
+
+
+
 include("admin/inc/functions.php");
 include("admin/inc/CSRF_Protect.php");
 $csrf = new CSRF_Protect();
@@ -14,12 +20,18 @@ $success_message = '';
 $error_message1 = '';
 $success_message1 = '';
 
+
+
+
+
 // Getting all language variables into array as global variable
 $i=1;
 $statement = $pdo->prepare("SELECT * FROM tbl_language");
 $statement->execute();
 $result = $statement->fetchAll(PDO::FETCH_ASSOC);							
 foreach ($result as $row) {
+
+	
 	define('LANG_VALUE_'.$i,$row['lang_value']);
 	$i++;
 }
@@ -277,6 +289,7 @@ foreach ($result as $row) {
 		</div>
 	</div>
 </div>
+
 
 
 <div class="header">
