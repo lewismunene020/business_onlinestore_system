@@ -8,14 +8,19 @@ date_default_timezone_set('America/Los_Angeles');
 // Host Name
 $dbhost = 'localhost';
 
+
 // Database Name
 $dbname = 'ecommerceweb';
 
 // Database Username
-$dbuser = 'root';
+// $dbuser = 'root';
+$dbuser = 'lewis';
+
 
 // Database Password
-$dbpass = '';
+// $dbpass = '';
+$dbpass = 'Tvc@MuneneMysql';
+
 
 // Defining base url
 define("BASE_URL", "");
