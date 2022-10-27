@@ -1,4 +1,8 @@
-<?php require_once('header.php'); ?>
+<?php
+    require_once('header.php');
+    // dollar  to ksh  convertor  
+    // include "admin/inc/convertDollarToKsh.php";
+?>
 
 <?php
 $statement = $pdo->prepare("SELECT * FROM tbl_settings WHERE id=1");
@@ -149,10 +153,10 @@ foreach ($result as $row)
                             <div class="text">
                                 <h3><a href="product.php?id=<?php echo $row['p_id']; ?>"><?php echo $row['p_name']; ?></a></h3>
                                 <h4>
-                                    $<?php echo $row['p_current_price']; ?> 
+                                    KSH<?php echo convertDollarToKsh($row['p_current_price']); ?> 
                                     <?php if($row['p_old_price'] != ''): ?>
                                     <del>
-                                        $<?php echo $row['p_old_price']; ?>
+                                        KSH<?php echo convertDollarToKsh($row['p_old_price']); ?>
                                     </del>
                                     <?php endif; ?>
                                 </h4>
@@ -278,10 +282,13 @@ foreach ($result as $row)
                             <div class="text">
                                 <h3><a href="product.php?id=<?php echo $row['p_id']; ?>"><?php echo $row['p_name']; ?></a></h3>
                                 <h4>
-                                    $<?php echo $row['p_current_price']; ?> 
+
+                                <!-- CHANGING PRICES FROM DOLLARS TO  KSH   -->
+
+                                    KSH<?php echo convertDollarToKsh($row['p_current_price']); ?> 
                                     <?php if($row['p_old_price'] != ''): ?>
                                     <del>
-                                        $<?php echo $row['p_old_price']; ?>
+                                    KSH<?php echo convertDollarToKsh($row['p_old_price']); ?>
                                     </del>
                                     <?php endif; ?>
                                 </h4>
@@ -409,10 +416,10 @@ foreach ($result as $row)
                             <div class="text">
                                 <h3><a href="product.php?id=<?php echo $row['p_id']; ?>"><?php echo $row['p_name']; ?></a></h3>
                                 <h4>
-                                    $<?php echo $row['p_current_price']; ?> 
+                                    KSH<?php echo convertDollarToKsh($row['p_current_price']); ?> 
                                     <?php if($row['p_old_price'] != ''): ?>
                                     <del>
-                                        $<?php echo $row['p_old_price']; ?>
+                                        KSH<?php echo convertDollarToKsh($row['p_old_price']); ?>
                                     </del>
                                     <?php endif; ?>
                                 </h4>

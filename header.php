@@ -9,6 +9,8 @@ include("admin/inc/config.php");
 
 // PHP  DEFINIFTIONS FILE  FROM  THE   ADMIN PANEL
 include("admin/inc/definitions.php");
+// dollar  to ksh convertor
+include "admin/inc/convertDollarToKsh.php";
 
 
 
