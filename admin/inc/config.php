@@ -13,13 +13,13 @@ $dbhost = 'localhost';
 $dbname = 'ecommerceweb';
 
 // Database Username
-$dbuser = 'root';
-// $dbuser = 'lewis';
+// $dbuser = 'root';
+$dbuser = 'ecommerceweb';
 
 
 // Database Password
 $dbpass = '';
-// $dbpass = 'Tvc@MuneneMysql';
+$dbpass = 'Tvc@EcommerceWeb1';
 
 
 // Defining base url
