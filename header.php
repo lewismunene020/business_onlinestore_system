@@ -119,6 +119,14 @@ foreach ($result as $row) {
 	<link rel="stylesheet" href="assets/css/main.css">
 	<link rel="stylesheet" href="assets/css/responsive.css">
 
+
+	<!-- google adsense  code   -->
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8990947365187499"
+     crossorigin="anonymous"></script>
+
+	
+
+
 	<?php
 
 	$statement = $pdo->prepare("SELECT * FROM tbl_page WHERE id=1");
