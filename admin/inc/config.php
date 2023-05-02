@@ -18,8 +18,8 @@ $dbuser = 'ecommerceweb';
 
 
 // Database Password
-$dbpass = '';
-$dbpass = 'Tvc@EcommerceWeb1';
+// $dbpass = '';
+$dbpass = '123';
 
 
 // Defining base url
